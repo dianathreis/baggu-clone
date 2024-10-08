@@ -1,0 +1,45 @@
+/* Studio Pro Font Definitions */
+@font-face {
+    font-family: 'Studio Pro';
+    src: url('https://cdn.shopify.com/s/files/1/0851/3262/files/StudioPro-Regular.woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Studio Pro';
+    src: url('https://cdn.shopify.com/s/files/1/0851/3262/files/StudioPro-Regular.woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/*Bootstrap Customization*/
+
+/*logo position adjustment*/
+.navbar-brand {
+    margin-left: -70px;
+}
+
+/*Navbar Customization of Colors*/
+.navbar-custom {
+    position: fixed;
+    width: 100%;
+    background-color:#fafaf8;
+    color: #000;
+}
+/*Message bar customization*/
+.message-bar {
+    font-family: 'Studio Pro', sans-serif;
+    font-weight: 300;
+    font-size: 0.75rem;
+}
+
+/* Offcanvas Menu */
+
+.offcanvas {
+    top: 70px; /* Ensure it starts below the navbar */
+    height: calc(100% - 70px); /* Ensure it doesn't overlap with the navbar */
+}
