@@ -10,14 +10,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<!-- Message Bar -->
+<!--message bar-->
 <div class="bg-dark text-white text-center py-2 message-bar">
     Free shipping on US orders over $50
 </div>
 
-<!-- Navbar (Fixed at the top, stays visible when offcanvas is open) -->
-<nav class="navbar navbar-expand-lg py-0 navbar-custom bg-light">
+<!--navbar-->
+<nav class="navbar navbar-expand-lg py-0 sticky-top w-100 bg-light text-dark">    
     <div class="container-fluid d-flex justify-content-between align-items-center">
         <div class="d-flex">
             <a class="nav-link fw-light fs-5 me-3" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">SHOP</a>
@@ -34,7 +35,14 @@
     </div>
 </nav>
 
-<!-- Offcanvas Menu (slides in from the left) -->
+<!--cover photo-->
+<div class="row justify-content-center">
+    <div class="col">
+        <img src="https://www.baggu.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft9jjg1v5%2Fproduction%2Fff39ddada52836c87867ab70d96a3b2f3a1c828d-2880x1800.jpg&w=3840&q=75" class="img-fluid">
+    </div>
+</div>
+
+<!--sliding menu -->
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
     <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasMenuLabel">SHOP</h5>
@@ -57,14 +65,62 @@
             <li><a href="#" class="text-dark fs-1 text-decoration-none">SALE</a></li>
         </ul>
     </div>
-
-<div class="row justify-content-center">
-    <div class="col">
-        <img src="https://www.baggu.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft9jjg1v5%2Fproduction%2Fff39ddada52836c87867ab70d96a3b2f3a1c828d-2880x1800.jpg&w=3840&q=75" class="img-fluid pt-3">
-    </div>
 </div>
-</div>
-
 </body>
+
+<!--"links"-->
+<footer class="container-fluid py-5">
+    <div class="row">
+
+        <!--newsletter-->
+        <div class="col-md-3 mb-4 mb-md-0">
+            <h2 class="fs-5 mb-3 fw-light fs-6">Join our newsletter</h2>
+            <div class="mb-3">
+                <input type="email" class="form-control border-0 border-bottom rounded-0 fs-6" placeholder="Enter email">
+            </div>
+            <button class="btn btn-dark rounded-5 px-4">SUBMIT</button>
+        </div>
+
+        <!--links section-->
+        <div class="col-md-8 offset-md-1">
+            <div class="row justify-content-end gap-4">
+                <div class="col-md-3">
+                    <div class="d-flex flex-column gap-2">
+                        <a href="#" class="text-dark text-decoration-none fw-light">FAQ</a>
+                        <a href="#" class="text-dark text-decoration-none fw-light">Shipping</a>
+                        <a href="#" class="text-dark text-decoration-none fw-light">Returns</a>
+                        <a href="#" class="text-dark text-decoration-none fw-light">Policies</a>
+                        <p class="mb-0 fw-light">Contact:</p>
+                        <a href="mailto:info@baggu.com" class="text-dark text-decoration-underline fw-light">info@baggu.com</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex flex-column gap-2">
+                        <a href="#" class="text-dark text-decoration-none fw-light">Sustainability</a>
+                        <a href="#" class="text-dark text-decoration-none fw-light">Wallpapers</a>
+                        <a href="#" class="text-dark text-decoration-none fw-light">Stores</a>
+                        <a href="#" class="text-dark text-decoration-none fw-light">Accessibility</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex flex-column gap-2">
+                        <a href="#" class="text-dark text-decoration-none fw-light">Account</a>
+                        <a href="#" class="text-dark text-decoration-none fw-light">Wholesale</a>
+                        <a href="#" class="text-dark text-decoration-none fw-light">Custom</a>
+                        <a href="#" class="text-dark text-decoration-none fw-light">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--logo-->
+    <div class="w-100 mt-5">
+        <div class="d-flex justify-content-center">
+            <img src="https://cdn.sanity.io/images/t9jjg1v5/production/01784231ba10b9a65fd12b444553531a23658279-1366x320.svg" alt="baggu logo" class="img-fluid logo-img">
+        </div>
+    </div>
+</footer>
+
 </html>
 
